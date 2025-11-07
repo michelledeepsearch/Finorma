@@ -329,52 +329,90 @@
                 </p>
             </div>
 
-           <h2 class="text-3xl font-bold text-ds-light-blue mb-10 border-b-4 border-ds-light-blue pb-2 flex items-center">
+<style>
+    /* Custom Font for Korean readability */
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    /* Custom Scrollbar for aesthetics */
+    body::-webkit-scrollbar {
+        width: 8px;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #60a5fa;
+        border-radius: 4px;
+    }
+    body::-webkit-scrollbar-track {
+        background-color: #f1f5f9;
+    }
+    /* Chart Placeholder Style */
+    .chart-placeholder {
+        height: 150px;
+        background-color: #e0f2f1;
+        border: 1px dashed #4db6ac;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #00796b;
+        font-weight: 700;
+        border-radius: 8px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    /* 🎨 SVG 아이콘 크기 및 색상 정의 (크기 조절 핵심 위치) */
+    .model-svg-icon {
+        width: 45px; /* 너비 설정 */
+        height: 45px; /* 높이 설정 */
+        color: #10b981; /* ds-accent 색상 */
+    }
+</style>
+
+<h2 class="text-3xl font-bold text-ds-light-blue mb-10 border-b-4 border-ds-light-blue pb-2 flex items-center">
     <img src="https://via.placeholder.com/40x40/007bff/ffffff?text=BM" alt="Business Model Icon" class="mr-3"> 📊 딥서치 비즈니스 모델
 </h2>
 <p class="text-gray-700 mb-8">AI 활용이 필요한 분야, AI 서비스를 기획 및 고도화 하는데 필요하신 부분을 전반적으로 지원 가능합니다.</p>
 
 <div class="grid md:grid-cols-4 gap-6 text-center">
     <div class="p-5 bg-white rounded-xl shadow-lg border-t-4 border-ds-accent">
-          <svg class="model-svg-icon mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M11 19c6.075 0 11-4.925 11-11S17.075-3 11-3 0 1.925 0 8s4.925 11 11 11zM21 21l-4.35-4.35M7 3h10v10H7z"/>
-                        <path d="M7 3h10v10H7z" />
-                        <path d="M7 7h10" />
-                        <path d="M7 11h10" />
-                    </svg>
+        <svg class="model-svg-icon mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 19c6.075 0 11-4.925 11-11S17.075-3 11-3 0 1.925 0 8s4.925 11 11 11zM21 21l-4.35-4.35M7 3h10v10H7z"/>
+            <path d="M7 3h10v10H7z" />
+            <path d="M7 7h10" />
+            <path d="M7 11h10" />
+        </svg>
         <h3 class="text-xl font-bold text-ds-accent mb-1">정보</h3>
         <p class="text-sm text-gray-600">기업 정보 서비스 (기업, 주식, ETF 정보) <span class="block font-bold text-ds-blue mt-1">-> AI 애널리스트</span></p>
     </div>
     
     <div class="p-5 bg-white rounded-xl shadow-lg border-t-4 border-ds-accent">
         <svg class="model-svg-icon mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 3h.01"></path>
-                        <path d="M16.5 7.5L12 12 7.5 7.5"></path>
-                        <path d="M12 12L12 21"></path>
-                        <path d="M3 16.5h18"></path>
-                        <path d="M3 16.5c-2.2 0-3 1.5-3 1.5s.8 1.5 3 1.5h18c2.2 0 3-1.5 3-1.5s-.8-1.5-3-1.5h-18z"></path>
-                    </svg>
+            <path d="M12 3h.01"></path>
+            <path d="M16.5 7.5L12 12 7.5 7.5"></path>
+            <path d="M12 12L12 21"></path>
+            <path d="M3 16.5h18"></path>
+            <path d="M3 16.5c-2.2 0-3 1.5-3 1.5s.8 1.5 3 1.5h18c2.2 0 3-1.5 3-1.5s-.8-1.5-3-1.5h-18z"></path>
+        </svg>
         <h3 class="text-xl font-bold text-ds-accent mb-1">평가</h3>
         <p class="text-sm text-gray-600">기업 평가 서비스 (보통주/우선주, RCPS, 스톡옵션) <span class="block font-bold text-ds-blue mt-1">-> AI 평가전문가</span></p>
     </div>
     
     <div class="p-5 bg-white rounded-xl shadow-lg border-t-4 border-ds-accent">
-          <svg class="model-svg-icon mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 19H7c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2z"></path>
-                        <path d="M17 19L21 21M7 5L3 3"></path>
-                        <path d="M12 12l2 2-2 2-2-2 2-2z"></path>
-                        <path d="M17 7h-2c-1.1 0-2 .9-2 2v2"></path>
-                        <path d="M7 17h2c1.1 0 2-.9 2-2v-2"></path>
-                    </svg>
+        <svg class="model-svg-icon mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 19H7c-1.1 0-2-.9-2-2V7c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2z"></path>
+            <path d="M17 19L21 21M7 5L3 3"></path>
+            <path d="M12 12l2 2-2 2-2-2 2-2z"></path>
+            <path d="M17 7h-2c-1.1 0-2 .9-2 2v2"></path>
+            <path d="M7 17h2c1.1 0 2-.9 2-2v-2"></path>
+        </svg>
         <h3 class="text-xl font-bold text-ds-accent mb-1">중개</h3>
         <p class="text-sm text-gray-600">기업 중개 플랫폼 (M&A, 실사/평가, 인수금융 지원) <span class="block font-bold text-ds-blue mt-1">-> AI M&A 전문가</span></p>
     </div>
     
     <div class="p-5 bg-white rounded-xl shadow-lg border-t-4 border-ds-accent">
-          <svg class="model-svg-icon mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M3 3v18h18M18.73 10.73L12 18 7 13 3 17"></path>
-                        <path d="M18.73 10.73V18h-7.27"></path>
-                    </svg>
+        <svg class="model-svg-icon mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 3v18h18M18.73 10.73L12 18 7 13 3 17"></path>
+            <path d="M18.73 10.73V18h-7.27"></path>
+        </svg>
         <h3 class="text-xl font-bold text-ds-accent mb-1">운용</h3>
         <p class="text-sm text-gray-600">금융 상품 운용 (ETF 지수 개발/운용, 다이렉트 인덱싱) <span class="block font-bold text-ds-blue mt-1">-> AI 투자 전문가</span></p>
     </div>
@@ -410,6 +448,7 @@
 
 </body>
 </html>
+
 
 
 
