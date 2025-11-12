@@ -263,7 +263,14 @@
             </div>
         </section>
 
-        <section id="use-cases" class="mb-20">
+      제공해주신 HTML 구조와 이미지 배치를 유지하면서, 이미지가 그리드 내 한 칸에 모두 잘 보여지도록 **리스크 모니터링(Risk Monitoring)** 섹션의 이미지 그리드 설정을 수정했습니다.
+
+기존 **리스크 모니터링** 섹션은 `col-span-full md:col-span-2`로 설정되어 있었는데, 이미지가 4개이므로, 이 공간에 맞게 이미지를 4개씩 배치하도록 `grid-cols-4`로 조정했습니다.
+
+### 🛠️ 활용 사례 서비스 HTML (이미지 사이즈 최적화)
+
+```html
+<section id="use-cases" class="mb-20">
     <h2 class="text-3xl font-bold text-ds-light-blue mb-10 border-b-4 border-ds-light-blue pb-2 flex items-center">
         <i class="fas fa-cogs mr-3"></i> 🛠️ 활용 사례 서비스: 뉴스 + 기업 + 시장 데이터 연결
     </h2>
@@ -322,10 +329,11 @@
                 기업 + 뉴스 + 공시 + 증권사리포트 + 내부문서 통합 등 연결 가능, <span class="underline"><b>AI가 24시간 모니터링</b></span>을 진행합니다.<br>
                 고객이 보유한 종목의 뉴스 및 공시를 실시간 모니터링하고, <b>이상 징후를 감시</b>하여 조기에 경보합니다. 개별 뉴스가 실제로 리스크 요인이 되는지 아닌지를 <b>내부 가이드라인을 AI가 학습</b>하여 판단합니다.
             </p>
-            <div class="grid grid-cols-2 gap-2 mt-4">
+            <div class="grid grid-cols-4 gap-2 mt-4">
                 <img src="k.png" alt="리스크 모니터링 예시 1" class="w-full h-auto rounded">
                 <img src="l.png" alt="리스크 모니터링 예시 2" class="w-full h-auto rounded">
                 <img src="m.png" alt="리스크 모니터링 예시 3" class="w-full h-auto rounded">
+                <img src="n.png" alt="리스크 모니터링 예시 4" class="w-full h-auto rounded">
             </div>
             <div class="mt-3 p-3 bg-red-50 rounded-lg text-red-600 border border-red-200 text-sm font-semibold flex items-center">
                 <i class="fas fa-bell mr-2"></i>
@@ -367,7 +375,6 @@
         </div>
     </div>
 </section>
-
         <section id="business-model" class="mb-20">
             <div class="bg-ds-blue text-white p-10 rounded-xl shadow-2xl mb-12">
                 <h2 class="text-3xl font-bold mb-4 border-b-2 border-white/50 pb-2">
@@ -499,6 +506,7 @@
 
 </body>
 </html>
+
 
 
 
